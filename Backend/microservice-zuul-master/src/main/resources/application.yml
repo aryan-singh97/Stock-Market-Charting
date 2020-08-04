@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: stock-spring-cloud-zuul
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+zuul:
+  routes:
+    user-service:
+      path: /user-service/**
+      serviceId: user-service
+    company-service:
+      path: /company-service/**
+      serviceId: company-service
+    sector-service:
+      path: /sector-service/**
+      serviceId: sector-service
+    stockExchange-service:
+      path: /stockExchange-service/**
+      serviceId: stockExchange-service
+    uploadExcel-service:
+      path: /uploadExcel-service/**
+      serviceId: uploadExcel-service
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+  max:
+    host:
+    connections: 5000
+  host:
+    socket-timeout-millis: 500000000
+    connect-timeout-millis: 500000000
+    maxTotalConnections: 500000000
+    maxPerRouteConnections: 500000000
+  semaphore:
+    max-semaphores: 500000000
+
+ribbon:
+  ReadTimeout: 500000000
+  ConnectTimeout: 500000000
+

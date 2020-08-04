@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: stock-spring-cloud-eureka
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+    fetch-registry: false
+    register-with-eureka: false
