@@ -1,5 +1,5 @@
 # Project-Stock Market Charting
-## Read Instructions for deployment on localhost
+### Read Instructions for deployment on localhost
 
  ## IMPORTANT
 
@@ -56,3 +56,4 @@ Start Service one after another in the order :
 
 9. UploadexcelApplication
 
+### Screenshots also provided under ScreenShots
