@@ -56,4 +56,7 @@ Start Service one after another in the order :
 
 9. UploadexcelApplication
 
+10. SectorApplication
+
+
 ### Screenshots also provided under ScreenShots
