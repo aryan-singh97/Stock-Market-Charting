@@ -1,7 +1,7 @@
 # Project-Stock Market Charting
 ## Read Instructions for deployment on localhost
 
-##IMPORTANT
+ ## IMPORTANT
 
 Please Make sure you have created the database with the name "stock_exchange"
 
