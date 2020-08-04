@@ -5,38 +5,54 @@
 
 Please Make sure you have created the database with the name "stock_exchange"
 
-##FRONTEND
+## FRONTEND
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+### NOTE
 -Change directory to frontend
->ng serve
--Navigate to http://localhost:4200/.
 
 -if error : Could not find module “@angular-devkit/build-angular”
+
 >npm install --save-dev @angular-devkit/build-angular
+
 -if error : found 91 vulnerabilities (87 low, 1 moderate, 3 high)
   run `npm audit fix` to fix them, or `npm audit` for details
+  
 >npm audit fix
 
--Now run 
+-Then Run
+
 >ng serve
--Navigate to http://localhost:4200/.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-##BACKEND
 
-Deploy backend from sts or intellij after building from maven 
+## #BACKEND
+
+
+To Deploy build from maven 
+
 Start Service one after another in the order :
 
 1. Admin-Server
+
 2. Config-Server
+
 3. EurekaApplication
+
 4. ZullApplication
+
 5. AuthApplication
+
 6. UserApplication
+
 7. CompanyApplication
+
 8. StockExchangeApplication
+
 9. UploadexcelApplication
-
-
-
 
